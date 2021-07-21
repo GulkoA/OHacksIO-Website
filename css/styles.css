@@ -9,7 +9,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #ff0000;
+  --red: #C1272D;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -36,6 +36,11 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+}
+
+:root {
+  --standard-border-radius: 0.5rem;
+  --standard-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 *,
@@ -104,6 +109,11 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.link {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 .container-calendar {
@@ -1641,6 +1651,53 @@ pre code {
   .offset-xl-11 {
     margin-left: 91.6666666667%;
   }
+}
+
+#about {
+  text-align: center;
+}
+
+.about__heading {
+  width: 40rem;
+}
+
+.about-card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  grid-template-rows: 1fr min-content;
+}
+
+.about-card > .card__head {
+  height: 5rem;
+  background-color: var(--red);
+  border-top-left-radius: var(--standard-border-radius);
+  border-top-right-radius: var(--standard-border-radius);
+  padding: 3rem;
+
+  color: var(--white);
+  font-weight: 500;
+  font-size: 125%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card > .card__body {
+  justify-content: space-between;
+  font-size: 1.3rem;
+  background-color: var(--white);
+  border-bottom-left-radius: var(--standard-border-radius);
+  border-bottom-right-radius: var(--standard-border-radius);
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+
+  flex-grow: 1;
 }
 
 .table {
@@ -6363,7 +6420,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #C1272D !important;
+  background-color: var(--red) !important;
 }
 
 a.bg-primary:hover,
@@ -9744,7 +9801,7 @@ a.text-dark:focus {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 2rem;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -9763,6 +9820,7 @@ a.text-dark:focus {
   .page-section .page-section-heading {
     font-size: 3rem;
     line-height: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -9963,7 +10021,7 @@ a.text-dark:focus {
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
