@@ -26,25 +26,28 @@
                     <img class="navbar-brand js-scroll-trigger" href="#page-top" src="assets/img/icon.png">
                     <a class="navbar-brand js-scroll-trigger" id="navbarTitle" href="#page-top">OHacksIO</a>
                 </div>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive, #navbarRight" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">SPONSORS</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Us</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">Sponsors</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="mailto:whatup@ohacksio.org">Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarRight">
                     <ul class="navbar-nav">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style="background-color: var(--red);" href="https://akhil0.aidaform.com/free-basic-contact-form" target="_blank" rel="noopener noreferrer">JOIN</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style="background-color: var(--red);" href="https://akhil0.aidaform.com/free-basic-contact-form" target="_blank" rel="noopener noreferrer">Join</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <header class="masthead">
             <div class="overlay"></div>
             <div class="container d-flex align-items-center flex-column">
@@ -142,7 +145,7 @@
                         </div>
                         <div class="card__body">
                             <div>
-                                OHacksIO is a virtual hackathon in which students will be given a theme and a set
+                                OHacksIO is a virtual hackathon in which teams of students will be given a theme and a set
                                 time period to create an app, website or game. There are limitless possibilties as to what you
                                 can create, as long as you're within bounds of the theme. In addition to the main competition,
                                 there will be workshops for beginner programmers.
@@ -166,9 +169,10 @@
                         </div>
                         <div class="card__body">
                             <div>
-                                To join our hackathon, start by filling out our <a class="link" target="_blank" href="https://www.ohacksio.org/sign-up">registration form</a>.
-                                projects will be submitted through <a class="link" target="_blank" href="https://devpost.com">Devpost</a>, so you should sign up for the hackathon on there too. 
-                                Once you fill out all the information, we will provide you with the discord link via email
+                                To join our hackathon, start by filling out our <a class="link" target="_blank" href="https://akhil0.aidaform.com/free-basic-contact-form">registration form</a>.
+                                Once you've registered, you will receive an invite link to our Discord server by email.
+                                Projects will be submitted through <a class="link" target="_blank" href="https://devpost.com">Devpost</a>, so one member
+                                from each team should sign up for the hackathon on there too.
                             </div>
                         </div>
                     </div>
@@ -255,15 +259,224 @@
 
             </div>
         </section>
-        
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Stuff-->
-                    
+
+        <section class="page-section" id="faq">
+
+            <!-- FAQ Section Heading-->
+            <div class="text-center">
+                <h2 class="page-section-heading d-inline-block">FAQ</h2>
+            </div>
+
+            <!-- FAQ Section Content-->
+            <div class="faq-cards">
+                <div class="faq-card-row-1">
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>Who can join?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                Our hackathon is open to anyone in high school or middle school. There
+                                will be one section for beginners and one for more experienced hackers.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>What if I can't code?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    No problem! There will be workshops where you can learn and grow as a programmer.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>Where and where will it be?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                Our hackathon will take place online so that anyone can participate from anywhere in the world!
+                                The main competition will start September 4th, 2021 and end on September 6th.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>Why should I join?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    Because it will be a ton of fun! Between making a project, participating in mini games,
+                                    attending talks from experts in technology, and just chatting with other participants, there will
+                                    be plenty of things for everyone to enjoy. Not to mention that winners of the hackathon will receive
+                                    prizes and a feature on our website.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>I have another question</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    For any questions or feedback, feel free to contact us
+                                    at <a class="link" href="mailto:whatup@ohacksio.org">whatup@ohacksio.org</a>
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="faq-card-row-2">
+
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>Do I need a team? How big can my team be?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    Teams can have up to 4 people. Working solo is completely fine, but if you would like
+                                    to work with others, there will be opportunities to connect and possibly form a team 
+                                    with other participants after registering.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>Does this cost money?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    Nope, OHackio is completely free!
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>How do I form a team?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    You can form a team with friends, or you can team up with
+                                    other participants after registering. Just make sure your team
+                                    contains no more than 4 members.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-card">
+                        <details class="card card--faq">
+                            <summary class="card__head card__head--faq">
+                                <span>How do I sign up?</span>
+                                <span>
+                                    <span class="card__head--faq__openBtn">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="card__head--faq__closeBtn">
+                                        <i class="fas fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </span>
+                            </summary>
+                            <div class="card__body">
+                                <p>
+                                    Start by filling out our <a class="link" target="_blank" href="https://akhil0.aidaform.com/free-basic-contact-form">registration form</a>.
+                                    After doing that, you'll be emailed an invite link to our Discord server. One member from each
+                                    team should also sign up for the hackathon on <a class="link" target="_blank" href="https://devpost.com">Devpost</a>.
+                                    This is where the final projects will be submitted.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </section>
+        
+        <!-- <footer class="footer text-center"> -->
+            <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
+                    <!-- Footer Stuff-->
+                    
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </footer> -->
         
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-white">
