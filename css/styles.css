@@ -268,6 +268,11 @@ p {
   margin: 0;
 }
 
+#guests img,
+#team img {
+  min-width: 100%;
+}
+
 .waiting {
   height: auto;
   width: auto;
@@ -4382,7 +4387,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    width: 9rem;
+    width: 6rem;
   }
 }
 
@@ -10118,7 +10123,7 @@ a.text-dark:focus {
   color: var(--white);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1f2d41;
+  /* color: #1f2d41; */
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10339,8 +10344,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 .portfolio {
-  /* padding-top: 6rem; */
-  /* padding-bottom: 4.5rem; */
+  padding-top: 6rem;
+  padding-bottom: 4.5rem;
 }
 
 .page-section-heading {
