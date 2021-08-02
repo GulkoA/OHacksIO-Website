@@ -66,4 +66,14 @@
     });
   
   })(jQuery); // End of use strict
+
+  //A function to copy text to clipboard
+  function copy(text) {
+    const tempEl = document.createElement('textarea');
+    tempEl.value = text;
+    document.body.appendChild(tempEl);
+    tempEl.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempEl);
+  }
   
