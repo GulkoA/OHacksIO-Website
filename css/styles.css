@@ -10379,3 +10379,20 @@ form .row:first-child .floating-label-form-group {
 .btn-social {
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .col-sm-2 {
+    flex: unset;
+    max-width: 12rem;
+    padding: 0.5rem;
+  }
+  #faq {
+    width: 85%;
+  }
+  #contact-cards {
+    flex-direction: column;
+  }
+}
