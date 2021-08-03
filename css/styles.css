@@ -155,7 +155,7 @@ p {
   display: none;
 }
 
--webkit-details-marker {
+summary::-webkit-details-marker {
   display: none !important;
 }
 
