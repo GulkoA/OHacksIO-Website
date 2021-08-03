@@ -21,7 +21,8 @@
           return false;
         } else if (target.length) {
           $('html, body').animate({
-            scrollTop: (target.offset().top - 71) * 0.8 + $(window).scrollTop() * (1 - 0.8)
+            // scrollTop: (target.offset().top - 71) * 0.8 + $(window).scrollTop() * (1 - 0.8)
+            scrollTop: (target.offset().top - 71)
           }, 1000, "easeInOutExpo");
           return false;
         }
@@ -84,4 +85,3 @@
     document.execCommand('copy');
     document.body.removeChild(tempEl);
   }
-  

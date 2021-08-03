@@ -54,6 +54,8 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* font-size: 12.8px; */
+  /* zoom: 0.8; */
 }
 
 article,
@@ -10176,7 +10178,7 @@ a.text-dark:focus {
     color: white;
   }
   #mainNav.navbar-shrink #navbarRight {
-    padding-left: 178.08px;
+    padding-left: 156px;
   }
 }
 
@@ -10390,7 +10392,7 @@ form .row:first-child .floating-label-form-group {
   }
   .col-sm-2 {
     flex: unset;
-    max-width: 11rem;
+    max-width: 15rem;
     padding: 0.5rem;
   }
   #faq {
