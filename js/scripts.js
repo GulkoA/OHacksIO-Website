@@ -10,10 +10,18 @@
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+        console.log(isSafari);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
+        if (target.length && isSafari) {
           $('html, body').animate({
-            scrollTop: (target.offset().top - 71)
+            // scrollTop: (target.offset().top - 71) * 0.8 + $(window).scrollTop() * (1 - 0.8)
+            scrollTop: (target.offset().top - 71) * 0.8
+          }, 1000, "easeInOutExpo");
+          return false;
+        } else if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 71) * 0.8 + $(window).scrollTop() * (1 - 0.8)
           }, 1000, "easeInOutExpo");
           return false;
         }
@@ -67,7 +75,7 @@
   
   })(jQuery); // End of use strict
 
-  //A function to copy text to clipboard
+  // A function to copy text to clipboard
   function copy(text) {
     const tempEl = document.createElement('textarea');
     tempEl.value = text;

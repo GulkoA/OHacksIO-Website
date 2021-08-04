@@ -155,6 +155,10 @@ p {
   display: none;
 }
 
+summary::-webkit-details-marker {
+  display: none !important;
+}
+
 .faq-img {
   width: 25rem;
   max-width: 100%;
@@ -10086,7 +10090,7 @@ a.text-dark:focus {
 }
 
 #navbarRight {
-  padding-left: 338.08px;
+  padding-left: 316px;
 }
 
 @media (max-width: 992px) {
@@ -10120,7 +10124,7 @@ a.text-dark:focus {
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: var(--white);
+  /* color: var(--white); */
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   /* color: #1f2d41; */
@@ -10152,14 +10156,14 @@ a.text-dark:focus {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: var(--white);
+    /* color: var(--white); */
     /* background: #1f2d41; */
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: var(--white);
-    background: #1f2d41;
+    /* color: var(--white); */
+    /* background: #1f2d41; */
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -10378,4 +10382,21 @@ form .row:first-child .floating-label-form-group {
 
 .btn-social {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .col-sm-2 {
+    flex: unset;
+    max-width: 11rem;
+    padding: 0.5rem;
+  }
+  #faq {
+    width: 85%;
+  }
+  #contact-cards {
+    flex-direction: column;
+  }
 }
