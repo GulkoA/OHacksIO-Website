@@ -10094,7 +10094,6 @@ a.text-dark:focus {
 
 .navbarRight {
   padding-left: 152.8px;
-  padding-right: 75px;
 }
 
 @media (max-width: 992px) {
@@ -10414,7 +10413,7 @@ form .row:first-child .floating-label-form-group {
 } */
 
 #mlh-small-logo {
-  padding-right: 25px;
+  padding-right: 32px;
   opacity: 0%;
 }
 
