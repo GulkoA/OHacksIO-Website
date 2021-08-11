@@ -1816,7 +1816,8 @@ pre code {
   background-color: var(--red);
   border-top-left-radius: var(--standard-border-radius);
   border-top-right-radius: var(--standard-border-radius);
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   color: var(--white);
   font-weight: 500;
@@ -10091,12 +10092,13 @@ a.text-dark:focus {
   line-height: 3.1rem;
 }
 
-#navbarRight {
-  padding-left: 252.8px;
+.navbarRight {
+  padding-left: 152.8px;
+  padding-right: 75px;
 }
 
 @media (max-width: 992px) {
-  #navbarRight {
+  .navbarRight {
     padding-left: 0px;
   }
   .nav-link {
@@ -10148,9 +10150,12 @@ a.text-dark:focus {
     transition: width 0.3s, color 0.3s;
     color: #020f1b;
   }
-  #mainNav #navbarRight {
+  #mainNav .navbarRight {
     transition: padding-left 0.3s;
     max-width: min-content;
+  }
+  .navbarRight img {
+    transition: opacity 0.3s;
   }
   #navbarTitle {
     visibility: hidden;
@@ -10178,8 +10183,12 @@ a.text-dark:focus {
     visibility: visible;
     color: white;
   }
-  #mainNav.navbar-shrink #navbarRight {
-    padding-left: 124.8px;
+  #mainNav.navbar-shrink .navbarRight {
+    padding-left: 24.8px;
+  }
+
+  #mainNav.navbar-shrink #mlh-small-logo {
+    opacity: 100%;
   }
 }
 
@@ -10387,6 +10396,36 @@ form .row:first-child .floating-label-form-group {
   margin-bottom: 0.5rem;
 }
 
+/* #mlh-trust-badge #mlh-big-logo{
+  display: block;
+}
+
+#mlh-trust-badge #mlh-small-logo{
+  display: none;
+}
+
+#mlh-trust-badge.shrink #mlh-big-logo{
+  display: none;
+}
+
+#mlh-trust-badge.shrink #mlh-small-logo{
+  display: block;
+  padding-top: 8px;
+} */
+
+#mlh-small-logo {
+  padding-right: 25px;
+  opacity: 0%;
+}
+
+#mlh-trust-badge {
+  transition: top 0.3s;
+}
+
+#mlh-trust-badge.shrink {
+  top: -200px !important;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 100% !important;
@@ -10405,16 +10444,16 @@ form .row:first-child .floating-label-form-group {
   #mainNav .navbar-toggler {
     margin-left: 0px;
   }
-  .navbar .container {
-    justify-content: flex-start;
-  }
   .about-card {
     width: 80%;
   }
-  .p-3 {
+  .card.p-3 {
     min-width: unset !important;
   }
   .masthead {
     padding-top: calc(2rem + 40px);
+  }
+  #mlh-small-logo, #mlh-trust-badge {
+    display: none !important;
   }
 }
