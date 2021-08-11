@@ -54,8 +54,10 @@
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
+        $("#mlh-trust-badge").addClass("shrink");
       } else {
         $("#mainNav").removeClass("navbar-shrink");
+        $("#mlh-trust-badge").removeClass("shrink");
       }
     };
     // Collapse now if page is not at top
