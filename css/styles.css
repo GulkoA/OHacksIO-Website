@@ -1816,7 +1816,8 @@ pre code {
   background-color: var(--red);
   border-top-left-radius: var(--standard-border-radius);
   border-top-right-radius: var(--standard-border-radius);
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   color: var(--white);
   font-weight: 500;
