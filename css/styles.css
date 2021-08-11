@@ -10431,7 +10431,7 @@ form .row:first-child .floating-label-form-group {
   }
   .col-sm-2 {
     flex: unset;
-    max-width: 15rem;
+    max-width: 12rem;
     padding: 0.5rem;
   }
   #faq {
@@ -10444,7 +10444,7 @@ form .row:first-child .floating-label-form-group {
     margin-left: 0px;
   }
   .about-card {
-    width: 80%;
+    width: 100%;
   }
   .card.p-3 {
     min-width: unset !important;
